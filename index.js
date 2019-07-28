@@ -27,18 +27,18 @@ app.post('/pay', (req, res) => {
         "transactions": [{
             "item_list": {
                 "items": [{
-                    "name": "Red Sox Hat",
+                    "name": "Jeans",
                     "sku": "001",
-                    "price": "25.00",
+                    "price": "53.00",
                     "currency": "USD",
                     "quantity": 1
                 }]
             },
             "amount": {
                 "currency": "USD",
-                "total": "25.00"
+                "total": "53.00"
             },
-            "description": "Hat for the best team ever"
+            "description": "Sample testing jeans"
         }]
     };
 
@@ -65,7 +65,7 @@ app.get('/success', (req, res) => {
         "transactions": [{
             "amount": {
                 "currency": "USD",
-                "total": "25.00"
+                "total": "53.00"
             }
         }]
     };
