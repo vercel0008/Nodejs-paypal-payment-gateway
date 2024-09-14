@@ -84,3 +84,16 @@ app.get('/success', (req, res) => {
 app.get('/cancel', (req, res) => res.send('Cancelled'));
 
 app.listen(3000, () => console.log('Server Started'));
+
+{
+    "version":2,
+    "builds": [
+      { "src": "*.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+        {
+          "src": "/(.*)",
+          "dest": "/"
+        }
+    ]
+  }
